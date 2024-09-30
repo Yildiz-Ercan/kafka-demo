@@ -7,9 +7,9 @@ import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
 public class KafkaTopicConfig {
-	
-	@Bean
-	public NewTopic myTopic() {
+
+    @Bean
+    NewTopic myTopic() {
 		return TopicBuilder.name("customer").build();
 	}
 
